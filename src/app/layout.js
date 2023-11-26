@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import './styles.css';
+import "./styles.css";
 
 function RootLayout({ children }) {
   return (
@@ -8,6 +8,12 @@ function RootLayout({ children }) {
       <body>
         {children}
 
+        <footer>
+          <div>
+            This page was rendered on the server at{" "}
+            {new Date().toLocaleString("en-us")}
+          </div>
+        </footer>
       </body>
     </html>
   );
